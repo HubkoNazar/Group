@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.gray {
+    background-color: grey;
+    color: white;
+}
+
+
+nav a {
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+}
+button {
+    background-color: lightslategray;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+}
+
+.hamster-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+
