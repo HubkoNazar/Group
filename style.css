@@ -11,10 +11,24 @@ body {
     color: white;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: darkgray;
+}
 
 nav a {
-    border: 4px solid black;
-    border-radius: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: gray;
+    transition: 0.3s;
+    color: black;
 }
 
 img {
@@ -22,12 +36,14 @@ img {
     height: 150px;
 }
 button {
-    background-color: lightslategray;
+    background-color: gray;
+    border: 2px solid black;
     border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    top: 0px;
+    right: -1400px;
     padding: 5px;
+    transition: 0.3s;
 }
 
 .hamster-gallery {
@@ -37,6 +53,20 @@ button {
     align-items: center;
     width: auto;
     height: auto;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+nav a:visited {
+    color: black;
 }
 
 
