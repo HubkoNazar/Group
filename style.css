@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 body {
-    background-color: white;
-    color: black;
+    background-color: #f9fafb;
+    color: darkgrey;
     transition: 0.3s;
+    line-height: 1.6;
+    margin: 0;
 }
 
 .gray {
-    background-color: grey;
-    color: white;
+    background-color: darkgrey;
+    color: #f9fafb;
 }
 
 nav {
@@ -18,7 +20,7 @@ nav {
     align-items: center;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: darkgray;
+    background-color: #2e7d32;
 }
 
 nav a {
@@ -34,6 +36,9 @@ nav a {
 img {
     width: 250px;
     height: 150px;
+     max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 button {
     background-color: gray;
@@ -69,5 +74,40 @@ nav a:visited {
     color: black;
 }
 
+h1, h2 {
+  color: #2e7d32; /* зелений = енергія */
+  margin-top: 40px;
+}
 
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  border-left: 6px solid #66bb6a;
+  padding-left: 12px;
+}
+
+.section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.hamster-gallery img {
+    width: 250px;
+  transition: transform 0.3s;
+}
+
+.hamster-gallery img:hover {
+  transform: scale(1.05);
+}
+
+:root {
+  --green: #2e7d32;
+  --yellow: #fbc02d;
+}
 
