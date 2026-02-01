@@ -8,6 +8,10 @@ body {
     font-size: 25px;
 }
 
+p {
+  margin-left: 10px;
+}
+
 .gray {
     background-color: darkgrey;
     color: #f9fafb;
@@ -21,6 +25,7 @@ nav {
     padding: 10px;
     margin-bottom: 20px;
     background-color: #2e7d32;
+    margin-left: 10px;
 }
 
 nav a {
@@ -39,6 +44,7 @@ img {
      max-width: 100%;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  margin-left: 10px;
 }
 button {
     background-color: gray;
@@ -77,6 +83,7 @@ nav a:visited {
 h1, h2 {
   color: #2e7d32; /* зелений = енергія */
   margin-top: 40px;
+  margin-left: 10px;
 }
 
 h1 {
@@ -112,3 +119,6 @@ h2 {
   --yellow: #fbc02d;
 }
 
+.hamster-gallery :first-child {
+  margin-left: 10px;
+}
