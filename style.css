@@ -5,7 +5,7 @@ body {
     color: darkgrey;
     transition: 0.3s;
     line-height: 1.6;
-    margin: 0;
+    font-size: 25px;
 }
 
 .gray {
@@ -81,6 +81,7 @@ h1, h2 {
 
 h1 {
   font-size: 36px;
+  text-align: center;
 }
 
 h2 {
