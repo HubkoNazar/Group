@@ -6,10 +6,12 @@ body {
     transition: 0.3s;
     line-height: 1.6;
     font-size: 25px;
+    line-height: 1.5;
 }
 
 p {
   margin-left: 10px;
+  font-size: 18px;
 }
 
 .gray {
@@ -46,15 +48,16 @@ img {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   margin-left: 10px;
 }
-button {
+ .theme{
     background-color: gray;
     border: 2px solid black;
     border-radius: 5px;
-     position: fixed; /* завжди на одному місці на екрані */
-    top: 20px;       /* відстань від верху */
-    right: 20px;     /* відстань від правого краю */
+     position: fixed;
+    top: 20px;       
+    right: 20px;     
     z-index: 100;
-    padding: 3px; 
+    padding: 3px;
+    transition: 0.3s;
 }
 
 .hamster-gallery {
@@ -66,7 +69,7 @@ button {
     height: auto;
 }
 
-button:hover {
+.themeBtn:hover {
     background-color: lightgray;
     cursor: pointer;
 }
@@ -94,12 +97,20 @@ h1 {
 h2 {
   border-left: 6px solid #66bb6a;
   padding-left: 12px;
+  font-size: 28px;
 }
 
+h3{
+  border-left: 6px solid #66bb6a;
+  padding-left: 12px;
+  font-size: 22px;
+  margin-left: 10px;
+  color: #2e7d32;
+}
 .section {
   background: #fff;
   border-radius: 16px;
-  padding: 24px;
+  padding: 35px;
   margin: 30px auto;
   max-width: 1000px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
@@ -121,4 +132,46 @@ h2 {
 
 .hamster-gallery :first-child {
   margin-left: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e7d32;
+  color: white;
+  margin-top: 40px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #f9fafb;
+    font-size: 22px;
+    cursor: pointer;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+#scrollTopBtn.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+#scrollTopBtn:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
 }
