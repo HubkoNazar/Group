@@ -175,3 +175,12 @@ footer {
 #scrollTopBtn:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
 }
+
+iframe {
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin-left: 10px;
+    width: 100%;
+    max-width: 951px;
+    height: 50%;
+}
