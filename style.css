@@ -36,9 +36,9 @@ nav a {
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
-    background-color: #cfcfcf;
+    background-color: #bbbbbb;
     transition: 0.3s;
-    color: #696969;
+    color: rgb(1, 170, 1)
 }
 
 img {
@@ -52,14 +52,15 @@ img {
  .theme{
     background-color: #cfcfcf;
     border: 3px solid black;
+   color: green;
     border-radius: 5px;
      position: fixed;
     top: 20px;       
     right: 20px;     
     z-index: 100;
-    padding: 3px;
+    padding: 5px;
     transition: 0.3s;
-    font-size: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
 }
 
 .hamster-gallery {
@@ -72,18 +73,11 @@ img {
 }
 
 .themeBtn:hover {
-    background-color: lightgray;
+    background-color: rgb(157, 156, 156);
     cursor: pointer;
 }
 
-nav a:hover {
-    background-color: lightgray;
-    cursor: pointer;
-}
 
-nav a:visited {
-    color: black;
-}
 
 h1, h2 {
   color: #2e7d32; /* зелений = енергія */
@@ -125,11 +119,6 @@ h3{
 
 .hamster-gallery img:hover {
   transform: scale(1.05);
-}
-
-:root {
-  --green: #2e7d32;
-  --yellow: #fbc02d;
 }
 
 .hamster-gallery :first-child {
@@ -180,4 +169,27 @@ iframe {
     width: 100%;
     max-width: 951px;
     height: 50%;
+}
+
+.fun-block {
+    background: #f5f5f5;
+    border-left: 4px solid #66bb6a;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: "Merriweather", serif;
+}
+
+.fun-block a {
+    display: inline-block;
+    margin: 10px 0;
+    color: white;
+    background: #66bb6a;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.fun-block a:hover {
+    background: #058013;
 }
